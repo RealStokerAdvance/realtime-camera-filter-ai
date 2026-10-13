@@ -1,0 +1,1 @@
+"""beauty_smooth — real-time skin smoothing plugin."""
