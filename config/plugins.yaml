@@ -1,0 +1,29 @@
+# Plugin registry — what the loader is allowed to load.
+# Folder names map to plugins/<name>/.
+enabled:
+  - beauty_smooth
+  - background_blur
+  - anime_style
+  - face_swap_lite
+  - lowlight_boost
+
+disabled:
+  - depth_fake_bokeh   # needs depth model, still WIP
+  - sketch_pencil
+
+settings:
+  beauty_smooth:
+    strength: 0.6
+    preserve_edges: true
+  background_blur:
+    radius_px: 18
+    segmentation_model: "models/weights/seg_mobile.onnx"
+  anime_style:
+    model: "models/weights/anime_v2.onnx"
+    palette: "vivid"
+  face_swap_lite:
+    source_face: null
+    blend: 0.85
+  lowlight_boost:
+    gain: 1.8
+    denoise: true
