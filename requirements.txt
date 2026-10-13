@@ -1,0 +1,15 @@
+# Core host runtime
+numpy>=1.26,<2.1
+opencv-python>=4.9
+onnxruntime>=1.17
+PyYAML>=6.0
+pydantic>=2.6
+tomli>=2.0; python_version < "3.11"
+rich>=13.7
+typer>=0.12
+
+# Dev / test
+pytest>=8.0
+pytest-benchmark>=4.0
+ruff>=0.4
+black>=24.3
