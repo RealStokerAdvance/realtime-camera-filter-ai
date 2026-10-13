@@ -1,0 +1,14 @@
+[plugin]
+name = "beauty_smooth"
+version = "0.3.1"
+description = "Skin-smoothing filter with edge preservation via guided blur."
+tier = "live"
+entrypoint = "pipeline:Plugin"
+
+[capabilities]
+network = false
+gpu = true
+
+[settings]
+strength = 0.6
+preserve_edges = true
