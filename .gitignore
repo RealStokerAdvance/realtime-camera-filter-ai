@@ -1,0 +1,64 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Model weights & cache (large, regenerated)
+models/weights/*.onnx
+models/weights/*.pt
+models/weights/*.tflite
+.cache/
+rtcf_cache/
+
+# Runtime artifacts
+recordings/
+captures/
+*.mp4
+*.mkv
+*.png
+!docs/**/*.png
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Local config overrides
+config/local.yaml
+config/secrets.yaml
+
+# C++ build output
+native/build/
+native/CMakeFiles/
+*.obj
+*.pdb
+
+# C# / dotnet
+bin/
+obj/
+*.user
+
+# Java
+*.class
+.gradle/
