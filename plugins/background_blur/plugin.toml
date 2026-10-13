@@ -1,0 +1,15 @@
+[plugin]
+name = "background_blur"
+version = "0.2.4"
+description = "Person segmentation + gaussian background blur (portrait mode)."
+tier = "live"
+entrypoint = "pipeline:Plugin"
+
+[capabilities]
+network = false
+gpu = true
+weights = ["seg_mobile.onnx"]
+
+[settings]
+radius_px = 18
+segmentation_model = "models/weights/seg_mobile.onnx"
